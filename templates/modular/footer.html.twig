@@ -1,0 +1,12 @@
+<section id="footer">
+    <ul class="icons">
+        {% for icon in page.header.icons %}
+        <li><a href="#" class="icon fa-{{ icon.name }}"><span class="label">{{ icon.label }}</span></a></li>
+        {% endfor %}
+    </ul>
+    <div class="copyright">
+        <ul class="menu">
+            <li>{{ content }}</li>
+        </ul>
+    </div>
+</section>

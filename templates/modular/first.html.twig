@@ -1,0 +1,34 @@
+<section id="first" class="main">
+    <header>
+        <div class="container">
+            <h2>{{ page.header.title }}</h2>
+            <p>{{ content }}
+        </div>
+    </header>
+    <div class="content dark style1 featured">
+        <div class="container">
+            <div class="row">
+                {% for section in page.header.sections %}
+                <div class="4u 12u(narrow)">
+                    <section>
+                        <span class="feature-icon"><span class="icon fa-{{ section.icon }}"></span></span>
+                        <header>
+                            <h3>{{ section.title }}</h3>
+                        </header>
+                        {{ section.text }}
+                    </section>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="12u">
+                    <footer>
+                        {% for button in page.header.buttons %}
+                        <a href="{{ button.url }}" class="button scrolly">{{ button.text }}</a>
+                        {% endfor %}
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

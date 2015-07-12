@@ -1,0 +1,32 @@
+<section id="third" class="main">
+    <header>
+        <div class="container">
+            <h2>{{ page.header.title }}</h2>
+            <p>{{ content }}</p>
+        </div>
+    </header>
+    <div class="content dark style3">
+        <div class="container">
+            <span class="image featured">{{ page.media.images|first }}</span>
+            <div class="row">
+                {% for section in page.header.sections %}
+                <div class="4u 12u(narrow)">
+                    {% if section.title is defined %}
+                    <h3>{{ section.title }}</h3>
+                    {% endif %}
+                    {% for text in section.texts %}
+                        <p>{{ text }}</p>
+                    {% endfor %}
+                    {% if section.buttons is defined %}
+                    <footer>
+                        {% for button in section.buttons %}
+                            <a href="{{ button.url }}" class="button scrolly">{{ button.text }}</a>
+                        {% endfor %}
+                    </footer>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

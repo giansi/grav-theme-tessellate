@@ -1,0 +1,37 @@
+<section id="second" class="main">
+    <header>
+        <div class="container">
+            <h2>{{ page.header.title }}</h2>
+            <p>{{ content }}</p>
+        </div>
+    </header>
+    <div class="content dark style2">
+        <div class="container">
+            <div class="row">
+                <div class="4u 12u(narrow)">
+                    <section>
+                        {% for section in page.header.sections %}
+                        <h3>{{ section.title }}</h3>
+                        {% for text in section.texts %}
+                            <p>{{ text }}</p>
+                        {% endfor %}
+                        <footer>
+                            {% for button in section.buttons %}
+                            <a href="{{ button.url }}" class="button scrolly">{{ button.text }}</a>
+                            {% endfor %}
+                        </footer>
+                        {% endfor %}
+                    </section>
+                </div>
+                <div class="8u 12u(narrow)">
+                    <div class="row">
+                        {% for image in page.header.images %}
+                        {% set media_image = page.media[image.name] %}
+                        <div class="6u"><a href="{{ image.url }}" class="image fit"><img src="{{ media_image.url }}" alt="{{ image.alt|default('') }}" title="{{ image.title|default('') }}" /></a></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<section id="header" class="dark">
+    <header>
+        <h1>{{ page.header.title }}</h1>
+        {{ content }}
+    </header>
+    <footer>
+        {% for button in page.header.buttons %}
+            <a href="{{ button.url }}" class="button scrolly">{{ button.text }}</a>
+        {% endfor %}
+    </footer>
+</section>

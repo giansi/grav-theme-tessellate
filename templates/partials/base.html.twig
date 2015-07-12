@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if header.description %}
+        <meta name="description" content="{{ header.description }}">
+    {% else %}
+        <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    {% if header.robots %}
+        <meta name="robots" content="{{ header.robots }}">
+    {% endif %}
+    <link rel="icon" type="image/png" href="{{ theme_url }}/images/favicon.png">
+
+    <title>{% if header.title %}{{ header.title }} | {% endif %}{{ site.title }}</title>
+
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    {% block head_css %}
+        <link rel="stylesheet" href="{{ url('theme://assets/css/main.css') }}" />
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion <= 9 %}
+            {% do assets.add('theme://assets/css/ie9.css') %}
+        {% endif %}
+
+        {% if browser.getBrowser == 'msie' and browser.getVersion <= 8 %}
+            {% do assets.add('theme://assets/css/ie8.css') %}
+        {% endif %}
+
+        {{ assets.css() }}
+    {% endblock %}
+    {% endblock %}
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+{% include 'partials/scripts.html.twig' %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<section id="fourth" class="main">
+    <header>
+        <div class="container">
+            <h2>{{ page.header.title }}</h2>
+            <p>{{ content }}</p>
+        </div>
+    </header>
+    <div class="content style4 featured">
+        <div class="container 75%">
+            {% if config.plugins.simple_form.enabled %}
+                {% set simple_form_config = page.header.simple_form ?: config.themes.tessellate.simple_form %}
+                {{ simple_form(simple_form_config) }}
+            {% endif %}
+        </div>
+    </div>
+</section>
