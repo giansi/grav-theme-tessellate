@@ -24,8 +24,6 @@ You should now have all the theme files under
 
     /your/site/grav/user/themes/tessellate
 
-> NOTE: This theme is a modular component for Grav which requires the [Grav](http://github.com/getgrav/grav), [Error](https://github.com/getgrav/grav-theme-error), [Problems](https://github.com/getgrav/grav-plugin-problems) and [Simple Form](https://github.com/nunopress/grav-plugin-simple_form) plugins.
-
 # Updating
 
 As development for this theme continues, new versions may become available that add additional features and functionality, improve compatibility with newer Grav releases, and generally provide a better user experience. Updating this theme is easy, and can be done through Grav's GPM system, as well as manually.
