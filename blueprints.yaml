@@ -13,5 +13,4 @@ bugs: https://github.com/giansi/grav-theme-tessellate/issues
 license: MIT
 
 form:
-  validation: strict
-  fields:
+  validation: loose
