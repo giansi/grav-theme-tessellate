@@ -2,7 +2,7 @@
 
 ![Screenshot](README.jpg)
 
-This theme is a port of the [Tessallate HTML Template](http://html5up.net/tessellate) developed my [HTML5UP](http://html5up.net/) and ported to [Grav](http://getgrav.org) by Giansimon Diblas.
+This theme is a port of the [Tessallate HTML Template](http://html5up.net/tessellate) developed by [HTML5UP](http://html5up.net/) and ported to [Grav](http://getgrav.org) by Giansimon Diblas.
 
 # Installation
 
