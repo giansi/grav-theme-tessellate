@@ -2,7 +2,7 @@
 
 ![Screenshot](README.jpg)
 
-This theme is a port of the [Tessallate HTML Template](http://html5up.net/tessellate) developed my [HTML5UP](http://html5up.net/) and ported to [Grav](http://getgrav.org) by Giansimon Diblas.
+This theme is a port of the [Tessallate HTML Template](http://html5up.net/tessellate) developed by [HTML5UP](http://html5up.net/) and ported to [Grav](http://getgrav.org) by Giansimon Diblas.
 
 # Installation
 
@@ -65,4 +65,4 @@ You can find inside theme directory the folder `_demo` where you can find the ex
 
 ## Header image
 
-You can easily change the header image, replacing the `pages/[01.]home/_header/header.jpg` with your favourite one, keeping the same name.
+You can easily change the header image, replacing the `pages/[01.]home/_header/header.jpg` with your favourite one, but keeping the same name.
