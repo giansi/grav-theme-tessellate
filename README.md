@@ -63,7 +63,6 @@ Once this is done, you should be able to see the new theme on the frontend. Keep
 
 You can find inside theme directory the folder `_demo` where you can find the example contents for your site. If the theme is one-page layout copy all files inside `_demo/pages` into your home page folder. For the other folders follow the same name.
 
-
 ## Header image
 
-You can easily change the header image, replacing the `assets/images/header.jpg` with your favourite one.
+You can easily change the header image, replacing the `pages/[01.]home/_header/header.jpg` with your favourite one, keeping the same name.

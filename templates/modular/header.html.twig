@@ -1,4 +1,6 @@
-<section id="header" class="dark">
+{% set header_image = page.media.images["header.jpg"] %}
+{% set overlay_image = page.media.images["overlay.png"] %}
+<section id="header" class="dark" style="background-image: url({{ overlay_image.url }}),url({{ header_image.url }});">
     <header>
         <h1>{{ page.header.title }}</h1>
         {{ content }}
